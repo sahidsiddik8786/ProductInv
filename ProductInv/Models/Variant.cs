@@ -10,6 +10,7 @@ namespace ProductInventoryAPI.Models
         public Guid ProductId { get; set; }
         public Product Product { get; set; }
 
+
         public List<SubVariant> SubVariants { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace ProductInventoryAPI.Models
         public Guid Id { get; set; }
         public string ProductCode { get; set; }
         public string ProductName { get; set; }
-        public byte[] ProductImage { get; set; }
+        public byte[]? ProductImage { get; set; } // Allow null
         public DateTimeOffset CreatedDate { get; set; } = DateTimeOffset.UtcNow;
         public DateTimeOffset UpdatedDate { get; set; } = DateTimeOffset.UtcNow;
         public Guid CreatedUser { get; set; }
